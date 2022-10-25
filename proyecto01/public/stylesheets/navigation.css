@@ -1,0 +1,16 @@
+nav {
+    background-color: white;
+    z-index: 999;
+    position: sticky;
+    top: 0px;
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+    column-gap: 3rem;
+    font-size: 30px;
+}

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+a {
+    text-decoration: none;
+    color: #253c3e;
+    font-weight: bold;
+}
+
+/*Background fill*/
+.aboutme-background, .education-background, .projects-background, .skills-background, .haa-background, .suggestion-background, .socialmedia-background, .nav-background, .header-background {
+    background-color: #90AFC5;
+    padding: 10px 0px;
+    margin: 0;
+}
+
+.aboutme-background > h2, .education-background > h2, .projects-background > h2, .skills-background > h2, .haa-background > h2, .suggestion-background > h2, .socialmedia-background > h2, .nav-background > h2, .header-background > h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+body{
+    margin: 0px;
+}
+
+.nav-background{    
+    color: red;
+}
+
+.header-background{
+    color: blue;
+}
+
+/*About me*/
+
+section.aboutme {
+    margin: 0px;
+}
+
+div.aboutme-content {
+    background-color: #336B87;
+    padding-left: 40px;
+    margin: 0px 0px;
+}
+
+div.aboutme-content > * {
+    background-color: #336B87;
+    padding: 10px;
+    margin: 0%;
+}
+
+
+/* Education Style */
+section.education {
+    margin: 0px;
+}
+
+div.education-content {
+    background-color: rgba(74, 85, 82, 0.35);
+    padding-left: 40px;
+    margin: 0px 0px;
+}
+
+div.education-content > *{
+    padding: 10px;
+    margin: 0%;
+}
+
+
+
+/*Projects Style*/
+section.projects {
+    
+    /* padding: 10px 50px; */
+    margin: 0px 0px;
+}
+
+div.project-content {
+    background-color: #90AFC5;
+}
+
+div#wordsearch {
+    background-color: #336B87;
+    padding: 0px 40px;
+}
+
+div#tictactoe {
+    background-color: #253C3E;
+    padding: 0px 40px;
+}
+
+div#MQTT{
+    background-color: #4A5552;
+    padding: 0px 40px;
+}
+
+
+/*Skills Style*/
+section#skills{
+    background-color: #90AFC5;
+    margin: 0px;
+}
+
+div.skills-background {
+    /* background-color: #90AFC5; */
+    padding: 10px 50px;
+    margin: 0px 0px;
+}
+
+div.skills-content > h3{
+    background-color: #253C3E;
+    margin: 0;
+}
+
+div.skills-content > *{
+    background-color: rgba(74, 85, 82, 0.35);
+}
+
+
+/*HaA Style*/
+section.hobbiesandachievements{
+    margin: 0;
+    background-color: #90AFC5;
+}
+
+div.haa-background {
+    background-color: rgba(74, 85, 82, 0.40);
+    padding: 10px 50px;
+}
+
+div.haa-content > h3 {
+    color: #253C3E;
+    font-weight: bold;
+}
+
+
+/*Suggestion Style*/
+section.suggestion{
+    margin: 0px;
+}
+
+div.suggestion-background{
+    margin: 0;
+    background-color: #90AFC5;
+    padding:15px 0px;
+}
+
+div.suggestion-content{
+    background-color: #336B87;
+    padding: 0px 50px;
+}
+
+div.suggestion-content > h2{
+    text-align: center;
+}
+
+
+/*Social Media Style*/
+
+section.socialmedia{
+    margin: 0;
+}
+
+div.socialmedia-flexbox{
+    background-color: #336B87;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+    column-gap: 10rem;
+}
+
+div.map-frame{
+    /* background-color: #336B87;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+    column-gap: 10rem; */
+}
+
+div.map-content {
+    height: 31.25rem;
+    width: 31.25rem;
+} 
+div.video-content {
+    height: 19.688rem;
+    width: 35rem;
+
+}
+
+.map{
+    height: 100%;
+    width: 100%;  
+}
