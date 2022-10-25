@@ -65,10 +65,46 @@ div.education-content {
     margin: 0px 0px;
 }
 
+div.education-content b{
+    color: #253c3e;
+}
+
 div.education-content > *{
     padding: 10px;
     margin: 0%;
 }
+
+div.subjects-grade {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
+
+table.subjects-grade-content {
+    border-collapse: collapse;
+    border: #253C3E 5px solid;
+    background-color: #90AFC5;
+    width: 50%;
+}
+
+table.subjects-grade-content th{
+    border-right: #253C3E 5px solid;
+    height: 10%;
+}
+
+table.subjects-grade-content > caption{
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+    color: #253c3e;
+}
+ 
+td {
+    text-align: center;
+}
+
+
 
 
 
