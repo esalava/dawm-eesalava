@@ -20,7 +20,7 @@ a {
 
 .aboutme-background > h2, .education-background > h2, .projects-background > h2, .skills-background > h2, .haa-background > h2, .suggestion-background > h2, .socialmedia-background > h2, .nav-background > h2, .header-background > h2{
     text-align: center;
-    font-size: 30px;
+    font-size: 2vw;
 }
 
 body{
@@ -78,7 +78,7 @@ div.subjects-grade {
     display: flex;
     justify-content: center;
     padding-top: 3rem;
-    font-size: 2rem;
+    font-size: 1.2rem;
     padding-bottom: 3rem;
 }
 
@@ -92,6 +92,7 @@ table.subjects-grade-content {
 table.subjects-grade-content th{
     border-right: #253C3E 5px solid;
     height: 10%;
+
 }
 
 table.subjects-grade-content > caption{
@@ -104,10 +105,6 @@ td {
     text-align: center;
 }
 
-
-
-
-
 /*Projects Style*/
 section.projects {
     
@@ -116,22 +113,84 @@ section.projects {
 }
 
 div.project-content {
+    
     background-color: #90AFC5;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0.3rem;
+    row-gap: 0.5rem;
+    align-items: center;
+    position: relative;
 }
 
-div#wordsearch {
+div.project-content li {
+    list-style: none;
+}
+
+
+div.project-content h3{
+    margin: 0rem;
+    font-size: 4vw;
+}
+
+div#wordsearch{
     background-color: #336B87;
-    padding: 0px 40px;
+    height: 25vw;
+    text-align: center;
+    width: 49.5%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+div#info-wordsearch{
+    font-size: 0vw;
 }
 
 div#tictactoe {
     background-color: #253C3E;
-    padding: 0px 40px;
+    padding: 0rem;
+    margin: 0%;
+    height: 25vw;
+    text-align: center;
+    width: 50%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
+
+div#info-tictactoe{
+    font-size: 0vw;
+}
+
+
+div#tictactoe a{
+    /* color: white; */
+}
+
 
 div#MQTT{
     background-color: #4A5552;
-    padding: 0px 40px;
+    padding: 0px 3rem;
+    margin: 0%;
+    height: 25vw;
+    width: 100%;
+    text-align: center;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+div#info-MQTT{
+    font-size: 0vw;
+    
 }
 
 
@@ -187,8 +246,19 @@ div.suggestion-background{
 
 div.suggestion-content{
     background-color: #336B87;
-    padding: 0px 50px;
+    padding: 3rem 3.2rem;
+    height: 50rem;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem; 
 }
+
+div.suggestion-content #email-label{
+    height: 100rem;
+    font-size: 0px;
+
+}
+
 
 div.suggestion-content > h2{
     text-align: center;
@@ -207,11 +277,22 @@ div.socialmedia-flexbox{
     justify-content: center;
     flex-wrap: wrap;
     row-gap: 0.5rem;
-    column-gap: 10rem;
+    column-gap: 3rem;
+    
+}
+
+div.socialmedia-flexbox a{
+    color: white;
+    font-size: 1vw;
+
+}
+
+div.socialmedia-flexbox p{
+    margin: 1rem;
 }
 
 div.map-frame{
-    /* background-color: #336B87;
+    /* background-color: #336B87;r
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -222,7 +303,8 @@ div.map-frame{
 div.map-content {
     height: 31.25rem;
     width: 31.25rem;
-} 
+}
+
 div.video-content {
     height: 19.688rem;
     width: 35rem;
