@@ -1,11 +1,11 @@
 /* HOVER FOR PROJECTS */
 
-@media (hover :hover) and (min-width: 981px){
+@media (hover :hover) and (min-width: 981px) {
+
     /* cambio del tamaño del título */
     div#wordsearch:hover h3#headline-wordsearch,
     div#tictactoe:hover h3#headline-tictactoe,
-    div#MQTT:hover h3#headline-MQTT
-    {
+    div#MQTT:hover h3#headline-MQTT {
         font-size: 2vw;
     }
 
@@ -13,13 +13,14 @@
 
     div#wordsearch:hover div#info-wordsearch,
     div#tictactoe:hover div#info-tictactoe,
-    div#MQTT:hover div#info-MQTT
-    {
+    div#MQTT:hover div#info-MQTT {
         font-size: 1vw;
         opacity: 1;
     }
 
-    div#wordsearch:hover a, div#tictactoe:hover a, div#MQTT:hover a{
+    div#wordsearch:hover a,
+    div#tictactoe:hover a,
+    div#MQTT:hover a {
         font-size: 1vw;
         background-color: aliceblue;
         margin: 30%;
@@ -27,31 +28,57 @@
         border-radius: 5%;
     }
 
-    
+    div.education-content:hover,
+    div.aboutme-content:hover,
+    div#wordsearch:hover,
+    div#tictactoe:hover,
+    div#MQTT:hover,
+    div.haa-background:hover,
+    div.suggestion-content:hover,
+    .toggle-prog:hover,
+    .toggle-tech:hover,
+    .toggle-utilitary:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        border-top: 0.7rem inset #09eaff;
+        border-left: 0.7rem inset #253C3E;
+    }
+
+
 }
 
 
-@media (hover :hover) and (max-width: 980px){
-    .aboutme-background > h2, .education-background > h2, .projects-background > h2, .skills-background > h2, .haa-background > h2, .suggestion-background > h2, .socialmedia-background > h2, .nav-background > h2, .header-background > h2{
+@media (hover :hover) and (max-width: 980px) {
+
+    .aboutme-background>h2,
+    .education-background>h2,
+    .projects-background>h2,
+    .skills-background>h2,
+    .haa-background>h2,
+    .suggestion-background>h2,
+    .socialmedia-background>h2,
+    .nav-background>h2,
+    .header-background>h2 {
         text-align: center;
         font-size: 4vw;
     }
 
-    div#info-wordsearch, div#info-tictactoe, div#info-MQTT{
+    div#info-wordsearch,
+    div#info-tictactoe,
+    div#info-MQTT {
         font-size: 0vw;
     }
 
-    div#wordsearch{
+    div#wordsearch {
         background-color: #336B87;
         height: 43vw;
         text-align: center;
         width: 100%;
-    
+
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-    
+
     }
 
     div#tictactoe {
@@ -61,21 +88,21 @@
         height: 45vw;
         text-align: center;
         width: 100%;
-    
+
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     }
 
-    div#MQTT{
+    div#MQTT {
         background-color: #4A5552;
         padding: 0px 3rem;
         margin: 0%;
         height: 35vw;
         width: 100%;
         text-align: center;
-        
+
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -86,8 +113,7 @@
 
     div#wordsearch:hover h3#headline-wordsearch,
     div#tictactoe:hover h3#headline-tictactoe,
-    div#MQTT:hover h3#headline-MQTT
-    {
+    div#MQTT:hover h3#headline-MQTT {
         font-size: 5vw;
     }
 
@@ -95,30 +121,44 @@
 
     div#wordsearch:hover div#info-wordsearch,
     div#tictactoe:hover div#info-tictactoe,
-    div#MQTT:hover div#info-MQTT
-    {
+    div#MQTT:hover div#info-MQTT {
         font-size: 2.5vw;
         opacity: 1;
     }
 
-    div#wordsearch a, div#tictactoe a, div#MQTT a{
+    div#wordsearch a,
+    div#tictactoe a,
+    div#MQTT a {
         font-size: 0vw;
         background-color: aliceblue;
         margin: 0%;
         padding: 0%;
         border-radius: 5%;
     }
-    
 
-    div#wordsearch:hover a, div#tictactoe:hover a, div#MQTT:hover a{
+
+    div#wordsearch:hover a,
+    div#tictactoe:hover a,
+    div#MQTT:hover a {
         font-size: 2vw;
         background-color: aliceblue;
         margin: 30%;
         padding: 1.5% 1%;
         border-radius: 5%;
     }
+
+    div.education-content:hover,
+    div.aboutme-content:hover,
+    div#wordsearch:hover,
+    div#tictactoe:hover,
+    div#MQTT:hover,
+    div.haa-background:hover,
+    div.suggestion-content:hover,
+    .toggle-prog:hover,
+    .toggle-tech:hover,
+    .toggle-utilitary:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        border-top: 0.7rem inset #09eaff;
+        border-left: 0.7rem inset #253C3E;
+    }
 }
-
-
-
-

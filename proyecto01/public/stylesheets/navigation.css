@@ -1,10 +1,11 @@
 nav {
     background-color: white;
+    opacity: 0.5;
     z-index: 999;
     position: fixed;
     top: 0px;
     width: 100%;
-    height: 9%;
+    height: 5vw;
     
 }
 
@@ -13,5 +14,14 @@ nav ul {
     justify-content:center;
     flex-wrap: wrap;
     row-gap: 2vw;
-    column-gap: 2vw;
+    column-gap: 2.4vw;
+    font-size: 1.4vw;
+}
+
+nav a:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    padding: 2vw 0.1vw;
+    background-color: rgb(44, 191, 191);
+    color: white;
+    font-size: 2vw;
 }

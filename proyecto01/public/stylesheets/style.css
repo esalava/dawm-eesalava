@@ -237,9 +237,45 @@ section#skills{
     margin: 0px;
 }
 
+section#skills ul{
+    margin: 0%;
+    list-style: none;
+    /* display: none; */
+}
+
+.skills-programming-content{
+    display: none;
+}
+
+.skills-utilitary-content{
+    display: none;
+}
+
+.skills-tech-content{
+    display: none;
+}
+
+.show-skills-programming-content{
+    display:block;
+}
+
+.show-skills-utilitary-content{
+    display: block;
+}
+
+.show-skills-tech-content{
+    display: block;
+}
+
+
+
+
+
+
+
 div.skills-background {
     /* background-color: #90AFC5; */
-    padding: 10px 50px;
+    padding: 50px 50px;
     margin: 0px 0px;
 }
 
@@ -251,6 +287,8 @@ div.skills-content > h3{
 div.skills-content > *{
     background-color: rgba(74, 85, 82, 0.35);
 }
+
+
 
 
 /*HaA Style*/
