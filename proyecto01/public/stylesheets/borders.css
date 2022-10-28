@@ -1,0 +1,14 @@
+#profile_pic {
+    border-top: 0.2rem inset #09eaff;
+    border-left: 0.2rem inset #253C3E;   
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+}
+
+div.education-content:hover, div.aboutme-content:hover,
+div#wordsearch:hover, div#tictactoe:hover, div#MQTT:hover,
+div.haa-background:hover, div.suggestion-content:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-top: 0.7rem inset #09eaff;
+    border-left: 0.7rem inset #253C3E;
+}

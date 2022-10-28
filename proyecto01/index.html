@@ -10,6 +10,8 @@
     <link type="text/css" rel="stylesheet" href="public/stylesheets/forms.css">
     <link type="text/css" rel="stylesheet" href="public/stylesheets/navigation.css">
     <link type="text/css" rel="stylesheet" href="public/stylesheets/responsive.css">
+    <link type="text/css" rel="stylesheet" href="public/stylesheets/hover.css">
+    <link type="text/css" rel="stylesheet" href="public/stylesheets/borders.css">
 
 </head>
 
@@ -38,23 +40,36 @@
         <div class="aboutme-background">
             <h2>Sobre Mí</h2>
             <div class="aboutme-content">
-                <div>
+
+                <div class="div-for-profilepic">
                     <img src="public/images/profile_pic.jpg" alt="Foto de perfil" id="profile_pic">
+                    <br>
+                    <i>Un gusto!</i>
                 </div>
-                <p>
-                    “Desarrollador de software, abierto al uso de nuevas
-                    tecnologías que apoyen a la industria. Capaz de trabajar
-                    independientemente y en equipo, brindar ideas, ser creativo y
-                    aprender de los demás.
-                </p>
-                <p><b>Nombre:</b> Eduardo E. Salavarria Gomez</p>
 
-                <p><b>Correo:</b>eduardosg_@outlook.com</p>
+                <div class="div-for-description">
+                    <p>
+                        “Desarrollador de software, abierto al uso de nuevas
+                        tecnologías que apoyen a la industria. Capaz de trabajar
+                        independientemente y en equipo, brindar ideas, ser creativo y
+                        aprender de los demás.
+                    </p>
+                </div>
 
-                <p><b>Contacto: </b>099-062-5269</p>
-                <p><b>Birth: </b>14/Oct/2002</p>
-                <p><b>Ubicación: </b>Guayaquil, EC</p>
-                <p><b>Nacionalidad: </b> Ecuatoriano</p>
+                <div class="div-for-pinformation">
+                    <p>I1</p>
+                    <p><b>Nombre:</b> Eduardo E. Salavarria Gomez</p>
+                    <p class="p1">I2</p>
+                    <p><b>Correo:</b>eduardosg_@outlook.com</p>
+                    <p>I3</p>
+                    <p><b>Contacto: </b>099-062-5269</p>
+                    <p>I4</p>
+                    <p><b>Birth: </b>14/Oct/2002</p>
+                    <p>I5</p>
+                    <p><b>Ubicación: </b>Guayaquil, EC</p>
+                    <p>I6</p>
+                    <p><b>Nacionalidad: </b> Ecuatoriano</p>
+                </div>
 
             </div>
         </div>
@@ -113,28 +128,50 @@
         <div class="projects-background">
             <h2>Proyectos</h2>
             <div class="project-content">
+                
                 <div id="wordsearch">
-                    <h3>Sopa de Letras</h3>
-                    <div id="info-wordsearch">
-                        <p>Descripción del proyecto de sopa de Letras</p>
+                    <div>
+                        <h3 id="headline-wordsearch">Sopa de Letras</h3>
+                        <div id="info-wordsearch">
+                            <ul>
+                                <li>Uso de Modelo Vista Controlador</li>
+                                <li>Uso de principios S.O.L.I.D</li>
+                                <li>Estructura de datos, listas enlazadas dobles y simples, listas circulares, algoritmos</li>
+                                <li>Creación de una sopa de letras completamente aleatoria por medio de recorrido de arreglos</li>
+                                <li>Nota final 110/100</li>
+                            </ul>
+                            <a href="https://github.com/esalava/2021P1ED-Proyecto" target="_blank">Visitar Repositorio (GITHUB)</a>
+                        </div>
                     </div>
                 </div>
                 <div id="tictactoe">
-                    <h3>Tres en Raya</h3>
-                    <div id="info-tictactoe">
-                        <p>Descripción del proyecto Tres en Raya</p>
+                    <div>
+                        <h3 id="headline-tictactoe">Tres en Raya</h3>
+                        <div id="info-tictactoe">
+                            <ul>
+                                <li>Implementación de una pseudo-inteligencia artificial por medio del algoritmo Mini-Max</li>
+                                <li>Uso de estructura de árboles</li>
+                                <li>Uso de recursión</li>
+                                <li>Revisión simple de algoritmos por medio de tests</li>
+                                <li>Friendly UI</li>
+                                <li>Nota final 140/100</li>
+                            </ul>
+                            <a href="https://github.com/ferbucheli/ProyectooED2P" target="_blank">Visitar Repositorio (GITHUB)</a>
+                        </div>
                     </div>
                 </div>
                 <div id="MQTT">
-                    <h3>Message Queuing Telemetry Transport</h3>
-                    <div id="info-MQTT">
-                        <ul>
-                            <li>Uso de concurrencia por medio de threads e hijos (fork).</li>
-                            <li>Control de concurrencia por medio de semáforos</li>
-                            <li>Aceptación de multiples clientes de manera simultánea</li>
-                            <li>Implementación de Log para control de errores</li>
-                        </ul>
-                        <a href="https://github.com/esalava/MQTTv1">Visitar Repositorio (GITHUB)</a>
+                    <div>
+                        <h3 id="headline-MQTT">Message Queuing Telemetry Transport</h3>
+                        <div id="info-MQTT">
+                            <ul>
+                                <li>Uso de concurrencia por medio de threads e hijos (fork).</li>
+                                <li>Control de concurrencia por medio de semáforos</li>
+                                <li>Aceptación de multiples clientes de manera simultánea</li>
+                                <li>Implementación de Log para control de errores</li>
+                            </ul>
+                            <a href="https://github.com/esalava/MQTTv1" target="_blank">Visitar Repositorio (GITHUB)</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -208,20 +245,28 @@
         <div class="suggestion-background">
             <h2>Buzón de sugerencia</h2>
             <div class="suggestion-content">
+                
+                <div class="div-for-email">
+                    <label for="correoelectronico" id="email-label">Correo electrónico:</label>
+                    <br>
+                    <input type="email" id="email-input" name="correoelectronico" required="required">
+                </div>
 
-                <label for="correoelectronico">Correo electrónico:</label>
-                <br>
-                <input type="email" id="correoelectronico" name="correoelectronico" required="required">
-                <br>
-                <label for="buzonsugerencia">Buzón de sugerencia</label>
-                <br>
-                <textarea id="buzonsugerencia" name="mensaje" rows="10" cols="50"></textarea>
-                <br>
+                <div class="div-for-sugerencia">
+                    <label for="buzonsugerencia" id="buzon-label">Buzón de sugerencia:</label>
+                    <br>
+                    <textarea id="buzon-input" name="mensaje" rows="10" cols="50"></textarea>
+                </div>
+
                 <div class="video-content"><iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/mCdA4bJAGGk" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-            </div>
+                    src="https://www.youtube.com/embed/mCdA4bJAGGk" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+                </div>
+
+                
+
+                
 
         </div>
 
@@ -233,9 +278,9 @@
             <div class="socialmedia-content">
 
                 <div class="socialmedia-flexbox">
-                    <p>Instagram</p>
-                    <p>Facebook</p>
-                    <p>Whatsapp</p>
+                    <p><a href="https://www.instagram.com/eduardosg14_/" target="_blank" >Instagram</a></p>
+                    <p><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
+                    <p><a href="https://www.whatsapp.com/?lang=es" target="_blank">Whatsapp</a></p>
                 </div>
             </div>
         </div>

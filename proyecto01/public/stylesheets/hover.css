@@ -26,6 +26,8 @@
         padding: 1.5% 1%;
         border-radius: 5%;
     }
+
+    
 }
 
 
@@ -97,6 +99,14 @@
     {
         font-size: 2.5vw;
         opacity: 1;
+    }
+
+    div#wordsearch a, div#tictactoe a, div#MQTT a{
+        font-size: 0vw;
+        background-color: aliceblue;
+        margin: 0%;
+        padding: 0%;
+        border-radius: 5%;
     }
     
 
