@@ -1,30 +1,53 @@
-* , *:before, *:after {
+*,
+*:before,
+*:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-img, video, iframe{
+img,
+video,
+iframe {
     width: 100%;
     height: 100%;
 }
 
-@media (min-width: 640px) { body {font-size:1rem;} }
-@media (min-width:960px) { body {font-size:1.2rem;} }
-@media (min-width:1100px) { body {font-size:1.5rem;} }
+@media (min-width: 640px) {
+    body {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:960px) {
+    body {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width:1100px) {
+    body {
+        font-size: 1.5rem;
+    }
+}
 
 /* Smartphones (portrait and landscape) ———– */
 @media only screen and (min-device-width: 10px) and (max-device-width: 582px) {
-    div.map-content, textarea, div.video-content, #correoelectronico{
+
+    div.map-content,
+    textarea,
+    div.video-content,
+    #correoelectronico {
         width: 100%;
         height: 100%;
     }
 
-    nav li{
+    nav li {
         font-size: 2vw;
         list-style: none;
     }
-    nav ul{
+
+    nav ul {
         /* margin: 0%; */
         padding: 0%;
     }
@@ -32,46 +55,166 @@ img, video, iframe{
     nav {
         height: 4%;
     }
+
     nav ul {
         row-gap: 2vw;
         column-gap: 3vw;
     }
+
+    /*Logo*/
+    header h1 {
+        margin-bottom: 0;
+        font-size: 1.5vw;
+    }
     
+    header i{
+        color: #253c3e !important;
+        font-size: 4vw;
+    }
+    
+    div header{
+        text-align: center;
+        text-shadow:  0.2vw 0.3vw  rgba(0, 0, 0, 0.25), 0 0.5vw 0.5vw rgba(0, 0, 0, 0.22);
+    }
+
+    /*Education responsive*/
+    div.education-content {
+        display: flex;
+        column-gap: 0rem;
+        row-gap: 0rem;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 100vw;
+        padding: 0%;
+
+    }
+
+
+    div.education-text-content {
+        width: 100%;
+        font-size: 2vw;
+        height: 20vw;
+    }
+
+    div.map-content {
+        width: 100%;
+        height: 20%;
+        order: 100;
+        padding: 0%;
+    }
+
+    div.subjects-grade {
+        width: 100%;
+        padding-left: 6vw;
+        padding-top: 4vw;
+        margin-top: 0%;
+        height: 30vw;
+        margin: 0px auto;
+    }
+
+    div.subjects-grade table {
+        width: 70%;
+        height: 20%;
+        margin: 0px auto;
+    }
+
+    div.subjects-grade table caption {
+        font-size: 2.5vw;
+    }
+
+    div.subjects-grade table td,
+    div.subjects-grade table th {
+        font-size: 2vw;
+    }
+
+    div.map-content {
+        height: 50vw;
+        width: 100%;
+        padding: 0vw 0vw 3vw 6vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    div.map-content span {
+        margin: 0px auto;
+    }
+
+    div.map-content span i {
+        font-size: 2vw;
+    }
+
+    div.map-content br {
+        display: none;
+    }
+
+    iframe.map {
+        height: 100%;
+        width: 70vw;
+        margin: 0px auto;
+    }
+
+    /*Skills Responsive*/
+    section#skills h3{
+        font-size: 3vw;
+
+    }
+
+    section#skills ul li{
+        margin: 0%;
+        list-style: none;
+        font-size: 2.5vw;
+    }
+
+
 }
 
+
 /* Projects responsive */
-@media only screen and (min-width: 10px) and (max-width: 980px){
+@media only screen and (min-width: 10px) and (max-width: 980px) {
+
     /* div.project-content li,div.project-content a{
         font-size: 3vw;
         list-style: none;
     } */
-    .aboutme-background > h2, .education-background > h2, .projects-background > h2, .skills-background > h2, .haa-background > h2, .suggestion-background > h2, .socialmedia-background > h2, .nav-background > h2, .header-background > h2{
+    .aboutme-background>h2,
+    .education-background>h2,
+    .projects-background>h2,
+    .skills-background>h2,
+    .haa-background>h2,
+    .suggestion-background>h2,
+    .socialmedia-background>h2,
+    .nav-background>h2,
+    .header-background>h2 {
         text-align: center;
         font-size: 5vw;
     }
 
-    div#info-wordsearch, div#info-tictactoe, div#info-MQTT{
+    /*Projects responsive*/
+    div#info-wordsearch,
+    div#info-tictactoe,
+    div#info-MQTT {
         font-size: 3vw;
     }
 
 
-    div.project-content h3{
+    div.project-content h3 {
         font-size: 4vw;
         list-style: none;
-    
+
     }
 
-    div#wordsearch{
+    div#wordsearch {
         background-color: #336B87;
         height: 70vw;
         text-align: center;
         width: 100%;
-    
+
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-    
+
     }
 
     div#tictactoe {
@@ -81,28 +224,30 @@ img, video, iframe{
         height: 70vw;
         text-align: center;
         width: 100%;
-    
+
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     }
 
-    div#MQTT{
+    div#MQTT {
         background-color: #4A5552;
         padding: 0px 3rem;
         margin: 0%;
         height: 70vw;
         width: 100%;
         text-align: center;
-        
+
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     }
 
-    div#wordsearch a, div#tictactoe a, div#MQTT a{
+    div#wordsearch a,
+    div#tictactoe a,
+    div#MQTT a {
         font-size: 1.6vw;
         background-color: aliceblue;
         margin: 30%;
@@ -110,33 +255,21 @@ img, video, iframe{
         border-radius: 5%;
     }
 
-    div.socialmedia-flexbox a{
+    div.socialmedia-flexbox a {
         font-size: 1.5rem;
     }
 
-    .subjects-grade-content{
+    .subjects-grade-content {
         font-size: 3vw;
     }
-    
+
     .subjects-grade-content caption {
         font-size: 3vw;
     }
-    
 
+    /*Redes sociales responsive*/
+    div.socialmedia-flexbox a {
+        font-size: 3vw;
+    }
 
 }
-
-
-/* @media only screen and (min-width: 10px) and (max-width: 1080px){
-    div.suggestion-content{
-        background-color: #336B87;
-        padding: 3rem 3.2rem;
-        height: 25rem;
-        display: flex;
-    }
-
-    div.div-for-email{
-        height: 20%;
-    }
-
-} */
