@@ -3,7 +3,9 @@ const API_URL = "https://damp-beach-17296.herokuapp.com/https://api.coingecko.co
 const HTMLResponse = document.querySelector("#app");
 const ul = document.createElement('ul');
 
-fetch(`${API_URL}/coins/list?include_platform=false`)
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    fetch(`${API_URL}/coins/list?include_platform=false`)
     .then((response) => response.json())
     .then((cryptos) => {
         cryptos.forEach(crypto => {
@@ -16,7 +18,13 @@ fetch(`${API_URL}/coins/list?include_platform=false`)
             trow.appendChild(data_name)
             trow.appendChild(data_symbol)
             HTMLResponse.appendChild(trow);
-        });
-
+        })
         //HTMLResponse.appendChild(ul);
     })
+    .catch(error => {
+        console.log("An error has ocurred")
+    })
+
+});
+
+
