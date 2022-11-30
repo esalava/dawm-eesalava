@@ -1,6 +1,11 @@
-#my-chart.line {
-    height: 200px;
-    max-width: 400px;
-    margin: 1 auto;
+#my-chart.column {
+  height: 200px;
+  max-width: 300px;
+  margin: 0 auto;
+}
 
-  }
+#my-chart.line {
+  height: 200px;
+  max-width: 400px;
+  margin: 0 auto;
+}
