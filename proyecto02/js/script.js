@@ -53,45 +53,46 @@ await testAsync();
 };
 
 let obtenerPreciosHistoricos = (coin) => {
-  /* fetch(`${API_URL}${coin}/market_chart/range?vs_currency=usd&from=1606712022&to=1638248022`)
+  
+  fetch(`${API_URL}${coin}/market_chart/range?vs_currency=usd&from=1606712022&to=1638248022`)
           .then((response) => response.json())
           .then((cryptoinfo) => {
+            let chart_precio_historico = document.querySelector("#chart-content-price");
+            let precios_historicos = cryptoinfo["prices"]
+            //let precios_historicos = [0.19, 0.23, 0.28, 0.40, 0.36, 0.34, 0.46, 0.51, 0.44]
+            for(let i = 0; i<precios_historicos.length-20; i+=20){
+              let div = 0
+              if(coin == "bitcoin") {
+                div = 100000
+              } else if (coin == "ethereum"){
+                div = 10000
+              } else if (coin == "cardano"){
+                div = 10
+              } else {
+                div = 1
+              }
+              precio_ant = precios_historicos[i][1]/div  
+              precio_post = precios_historicos[i+20][1]/div//${precios_historicos[i + 1]}
+              chart_precio_historico.innerHTML += `<tr><td style="--start:${precio_ant};  --size: ${precio_post}"> <span class="data"></span> </td></tr>`;
 
-            //let precios_historicos = cryptoinfo["prices"]
-            let precios_historicos = [0.19, 0.23, 0.28, 0.40, 0.36, 0.34, 0.46, 0.51, 0.44]
-            for(let i = 0; i<precios_historicos.length; i+=10){
-                precio = precios_historicos[i][1]
-                console.log(precio/100000)
             }
            
           })
           .catch((error) => {
             console.log("An error has ocurred");
-          }); */
-
-  let precios_historicos = [
-    0.19, 0.23, 0.28, 0.4, 0.36, 0.34, 0.46, 0.51, 0.44,
-  ];
-
-  let chart_precio_historico = document.querySelector("#chart-content-price");
-  for (let i = 0; i < precios_historicos.length - 1; i++) {
-    precio = precios_historicos[i];
-    console.log(precio);
-    chart_precio_historico.innerHTML += `<tr>
-    <td style="--start:${precios_historicos[i]};  --size: ${
-      precios_historicos[i + 1]
-    } "> <span class="data"> ${precios_historicos[i + 1]}</span> </td>
-  </tr>`;
-  }
+          }); 
 };
 
 let btn_consultar_reddit = document.querySelector(".chart-comentario-btn-1");
 btn_consultar_reddit.addEventListener("click", () => {
   let seleccion_reddit = document.querySelector("#seleccion_reddit").value;
-
+  let caption_reddit = document.querySelector("#caption-reddit")
   if (seleccion_reddit == 1) {
+   
+    caption_reddit.innerHTML = "Reddit Avg comments 48h"
     obtenerPrecioEnFecha("reddit_average_comments_48h");
   } else if (seleccion_reddit == 2) {
+    caption_reddit.innerHTML = "Reddit Avg posts 48h"
     obtenerPrecioEnFecha("reddit_average_posts_48h");
   }
 });
@@ -105,7 +106,22 @@ btn_clear_reddit.addEventListener("click", () => {
 
 let btn_price_cryp = document.querySelector(".chart-price-btn-1");
 btn_price_cryp.addEventListener("click", () => {
-  obtenerPreciosHistoricos("bitcoin");
+  let seleccion_cryp = document.querySelector("#seleccion_precio").value;
+  let caption_precio = document.querySelector("#caption-price")
+  if(seleccion_cryp == 1){
+    caption_precio.innerHTML = "Historical BTC data from 2020 11 30 - 2021 11 30"
+    obtenerPreciosHistoricos("bitcoin");
+    
+  } else if (seleccion_cryp == 2){
+    caption_precio.innerHTML = "Historical ETH data from 2020 11 30 - 2021 11 30"
+    obtenerPreciosHistoricos("ethereum");
+  } else if(seleccion_cryp == 3){
+    caption_precio.innerHTML = "Historical ADA data from 2020 11 30 - 2021 11 30"
+    obtenerPreciosHistoricos("cardano");
+  } else {
+    caption_precio.innerHTML = "Historical XML data from 2020 11 30 - 2021 11 30"
+    obtenerPreciosHistoricos("stellar");
+  }
 });
 
 let btn_clear_price = document.querySelector(".chart-price-btn-2");
