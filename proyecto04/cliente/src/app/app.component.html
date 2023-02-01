@@ -1,0 +1,39 @@
+<mat-drawer-container class="example-container" autosize>
+
+  <mat-drawer #enlaces class="example-sidenav" mode="over">
+    <div class="position-sticky text-center">
+      <div class="list-group list-group-flush mx-3 mt-4">
+        
+        <a routerLink="/customers" class="list-group-item list-group-item-action py-2 ripple">
+          <mat-icon>perm_identity</mat-icon>
+          <span>Customers</span>
+        </a>
+        <a routerLink="/products" class="list-group-item list-group-item-action py-2 ripple">
+          <mat-icon>shopping_basket</mat-icon>
+          <span>Products</span>
+        </a>
+      </div>
+    </div>
+  </mat-drawer>
+
+  <mat-toolbar color="primary">
+    <button mat-icon-button color="accent" aria-label="menu" (click)="menu(enlaces)">  
+      <mat-icon>menu</mat-icon>  
+   </button> 
+   <a class="navbar-brand" routerLink="/">
+    <img src="../assets/img/polilogocircle.png" height="45" alt="" loading="lazy" id="logonav" />
+    </a>
+  <span>{{title}}</span>
+  
+  <ul class="navbar-nav ms-auto d-flex flex-row">
+    <li class="nav-item me-3 me-lg-0">
+      <a class="nav-link" href="https://github.com/anvefran/proyecto02LP-G8">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  </ul>
+  
+
+  </mat-toolbar> 
+  <router-outlet></router-outlet> 
+</mat-drawer-container>

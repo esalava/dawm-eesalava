@@ -1,0 +1,7 @@
+<div class="clients d-flex flex-row flex-wrap justify-content-center align-items-center">
+    
+    <div *ngFor="let customer of customers">
+        <div class="m-2"></div>
+        <a mat-raised-button routerLink="/customer/{{customer.customerNumber}}" style="font-size: 1vw;">{{customer.customerName}}</a>
+    </div>
+</div>
